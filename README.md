@@ -9,7 +9,7 @@ Here is the JavaScript code which can be used inside a click event to create and
 Safari will prompt a message popover to ask the user to display a calendat event first though.
 
 ```javascript
-let lines = [
+const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
     "CALSCALE:GREGORIAN",
@@ -45,7 +45,7 @@ let lines = [
     "END:VCALENDAR"
 ];
 
-let durl = 'data:text/calendar;charset=utf-8,'+encodeURIComponent(lines.join('\n'));
+const durl = 'data:text/calendar;charset=utf-8,'+encodeURIComponent(lines.join('\r\n'));
 window.open(durl, '_blank');
 ```
 
