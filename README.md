@@ -1,11 +1,12 @@
-# ics_FileCreation
-A small overview how to create a .ics calendar file which includes a map location object on iOS devices
+# .ics file creation
+A small readme file how to create a `.ics` calendar file which includes a map location object on iOS devices.
+The important part is the `X-APPLE-STRUCTURED-LOCATION` identifier.
 
 
 ## JavaScript example
 
-The following code creates an `.ics` file which includes an map location object on iOS devices.
-The important part is the `X-APPLE-STRUCTURED-LOCATION` identifier.
+Here is the JavaScript code which can be used inside a click event to create and show the `.ics` file.
+Safari will prompt a message popover to ask the user to display a calendat event first though.
 
 ```javascript
 let lines = [
